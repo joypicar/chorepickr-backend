@@ -6,7 +6,8 @@ const { OpenAI } = require('openai');
 const { createClient } = require('redis');
 
 const redis = createClient({
-    url: process.env.REDIS_URL // Defaults to localhost:6379
+    url: 'https://upward-humpback-11810.upstash.io',
+    token: 'AS4iAAIjcDE0MzNiZWE1NDRhYmU0YWE4ODA3OWE1YzNmMGQ2N2Q3Y3AxMA',
   });
   redis.connect().catch(console.error); 
 redis.connect().catch(console.error);
